@@ -56,18 +56,13 @@ INSERT INTO `vote` (`post_id`, `user_id`, `value`, `id`) VALUES
 --
 
 CREATE TABLE `post` (
-  `id` int(96) NOT NULL,
-  `timestamp` date NOT NULL,
-  `filename` varchar(255) NOT NULL,
-  `title` varchar(200) NOT NULL,
-  `authorName` varchar(200) NOT NULL,
-  `removed` varchar(255) NOT NULL,
-  `authorId` int(96) NOT NULL,
-  `imageUrl` varchar(255) NOT NULL,
-  `userId` int(96) NOT NULL,
-  `ip` varchar(255) NOT NULL
-) ENGINE=MEMORY DEFAULT CHARSET=utf8mb4;
-
+ `id` int(11) NOT NULL,
+  `timestamp` datetime NOT NULL,
+  `filename` varchar(96) NOT NULL,
+  `namememe` text NOT NULL,
+  `userId` int(11) NOT NULL,
+  `removed` tinyint(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 -- --------------------------------------------------------
 
 --
