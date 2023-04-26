@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktura tabeli dla tabeli `likes`
+-- Struktura tabeli dla tabeli `vote`
 --
 
-CREATE TABLE `likes` (
+CREATE TABLE `vote` (
   `post_id` int(96) NOT NULL,
   `user_id` int(96) NOT NULL,
   `value` int(96) NOT NULL,
@@ -35,10 +35,10 @@ CREATE TABLE `likes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Zrzut danych tabeli `likes`
+-- Zrzut danych tabeli `vote`
 --
 
-INSERT INTO `likes` (`post_id`, `user_id`, `value`, `id`) VALUES
+INSERT INTO `vote` (`post_id`, `user_id`, `value`, `id`) VALUES
 (2, 1, -1, 49),
 (3, 1, -1, 51),
 (1, 2, 1, 71),
@@ -85,9 +85,9 @@ CREATE TABLE `user` (
 --
 
 --
--- Indeksy dla tabeli `likes`
+-- Indeksy dla tabeli `vote`
 --
-ALTER TABLE `likes`
+ALTER TABLE `vote`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -107,9 +107,9 @@ ALTER TABLE `user`
 --
 
 --
--- AUTO_INCREMENT dla tabeli `likes`
+-- AUTO_INCREMENT dla tabeli `vote`
 --
-ALTER TABLE `likes`
+ALTER TABLE `vote`
   MODIFY `id` int(96) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
 
 --
