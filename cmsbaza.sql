@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Struktura tabeli dla tabeli `likes`
 --
 
-CREATE TABLE `vote` (
+CREATE TABLE `likes` (
   `post_id` int(96) NOT NULL,
   `user_id` int(96) NOT NULL,
   `value` int(96) NOT NULL,
